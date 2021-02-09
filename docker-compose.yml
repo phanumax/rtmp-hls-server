@@ -9,6 +9,7 @@ services:
       - ./conf/blocklist.conf:/etc/nginx/blocklist.conf
       - ./conf/nginx-acl.conf:/etc/nginx/nginx.conf
       - ./players:/usr/local/nginx/html/players
+      - ./media:/mnt
     ports:
       - 1935:1935
       - 8080:8080
