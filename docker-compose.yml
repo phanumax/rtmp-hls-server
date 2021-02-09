@@ -1,12 +1,10 @@
-version: '3.7'
+version: '3'
 
 services:
   nginx-rmtp:
     image: alqutami/rtmp-hls:latest-alpine
     container_name: rtmp-hls
     restart: always
-    environment:
-      - TZ=Asia/Bangkok
     volumes:
       - ./conf/blocklist.conf:/etc/nginx/blocklist.conf
       - ./conf/nginx-acl.conf:/etc/nginx/nginx.conf
