@@ -10,8 +10,7 @@ services:
     volumes:
       - ./conf/blocklist.conf:/etc/nginx/blocklist.conf
       - ./conf/nginx-acl.conf:/etc/nginx/nginx.conf
-      - ./media:/mnt
-      - ./custom-players:/usr/local/nginx/html/players
+      - ./players:/usr/local/nginx/html/players
     ports:
       - 1935:1935
       - 8080:8080
